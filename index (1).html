@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EL CERRO · Lanzamientos</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🎙️</text></svg>">
+<style>
+:root{--bg:#fff;--ink:#000;--mut:#666;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--ink:#fff;--mut:#999;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#000;--ink:#fff;--mut:#999;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.35 "Helvetica Neue",Helvetica,Arial,sans-serif;padding:16px}
+a{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+header{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;text-transform:uppercase;font-weight:700}
+header nav a{margin-left:16px;font-weight:400}
+header>a{text-decoration:none}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:end;margin:8vh 0 24vh}
+.hero h1,.page h1{font-size:clamp(2.8rem,10vw,9rem);line-height:.88;letter-spacing:-.05em;text-transform:uppercase;margin:0;word-break:break-word}
+.hero p,.tag{margin:0 0 8px;text-transform:uppercase;font-size:12px;color:var(--mut)}
+.cover{aspect-ratio:1;border:2px solid var(--ink);display:flex;align-items:flex-end;padding:12px;font-weight:700;font-size:clamp(1.4rem,4vw,2.6rem);line-height:.95;letter-spacing:-.03em;text-transform:uppercase;background:var(--ink);color:var(--bg)}
+.cover.alt{background:var(--bg);color:var(--ink)}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.links a{border:2px solid var(--ink);padding:8px 12px;text-decoration:none;text-transform:uppercase;font-weight:700;font-size:13px}
+.links a:hover,.links a:focus-visible{background:var(--ink);color:var(--bg)}
+.roster a{display:block;border-top:2px solid var(--ink);padding:25px 0 25px;text-decoration:none}
+.roster strong{display:block;margin-left:0;font-size:clamp(2.4rem,9vw,7rem);line-height:.8;letter-spacing:-.05em;text-transform:uppercase}
+.roster span{text-transform:uppercase;font-size:12px;color:var(--mut)}
+.roster a:hover strong{text-decoration:underline}
+.back{display:inline-block;margin:6vh 0 4vh;text-transform:uppercase;font-weight:700;text-decoration:none}
+.page{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;padding-bottom:56px}
+.bio{max-width:46ch;margin:20px 0 0}
+.soon{display:inline-block;background:var(--ink);color:var(--bg);padding:2px 6px;font-size:12px;text-transform:uppercase;font-weight:700;margin-bottom:8px}
+.rel h2{margin:12px 0 2px;font-size:18px;text-transform:uppercase}
+.rel span.m{color:var(--mut);font-size:13px}
+.contact{border-top:2px solid var(--ink);padding:16px 0 56px}
+.contact h2{font-size:clamp(2.4rem,9vw,7rem);line-height:.9;letter-spacing:-.05em;text-transform:uppercase;margin:0 0 8px}
+footer{border-top:2px solid var(--ink);padding-top:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;text-transform:uppercase;font-size:12px}
+.rel{max-width:200px}
+.photo{aspect-ratio:5/6;width:100%;border:2px dashed var(--ink);display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;color:var(--mut);text-transform:uppercase;font-size:12px}
+@media (min-width:761px){.page{grid-template-rows:auto 1fr}.page>div:first-child{grid-column:1;grid-row:1}.page .photo{grid-column:2;grid-row:1/3}.page .rel{grid-column:1;grid-row:2}}
+.roster .row{border-top:2px solid var(--ink);padding:25px 0}
+.roster.c a,.roster.c .row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 16px}
+.roster.c small{font-size:max(15px,2.2vh);font-weight:400;letter-spacing:0;text-transform:none}
+body[data-v="contacto"] .mail{visibility:hidden}
+@media (min-width:761px){body{margin:0;padding:16px 24px;font-size:max(15px,1.7vh)}.hero{grid-template-columns:1fr auto;margin:4vh 0 6vh}.hero h1,.page h1{font-size:min(14rem,20vh)}.hero .cover{height:44vh;width:auto;font-size:min(4rem,5vh)}.hero p{font-size:max(12px,1.4vh)}.roster a{font-size:min(11rem,14vh);padding:.22em 0}.roster strong{font-size:1em}.roster .row{font-size:min(11rem,14vh);padding:.22em 0}main[data-view="contacto"]{display:flex;flex-direction:column}.roster.c{margin-top:auto}.back{margin:3vh 0 2vh}.rel{max-width:min(260px,25vh)}.page{grid-template-columns:1fr auto;padding-bottom:3vh}.page .photo{height:min(76vh,calc(100vh - 250px));width:auto;justify-self:end}.links a{font-size:.85em;padding:.6em .9em}footer{font-size:max(12px,1.3vh)}body[data-v="wazco"],body[data-v="tenebris"],body[data-v="contacto"]{min-height:100vh;display:flex;flex-direction:column}body[data-v="wazco"] main,body[data-v="tenebris"] main,body[data-v="contacto"] main{flex:1}}
+@media (max-width:760px){.hero,.page{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><a href="#" data-go="inicio">El Cerro</a>
+<nav><a href="#wazco" data-go="wazco">Wazko</a><a href="#tenebris" data-go="tenebris">Tenebris</a><a href="#contacto" data-go="contacto">Contacto</a></nav></header>
+
+<main data-view="inicio">
+<section class="hero">
+<div>
+<p>Nuevo lanzamiento</p>
+<h1>Sin Receta</h1>
+<p style="margin-top:12px;color:var(--ink)">Wazko</p>
+<div class="links"><a href="#wazco" data-go="wazco">Ver a Wazko</a></div>
+</div>
+<div class="cover" role="img" aria-label="Portada de Sin Receta">Sin<br>Receta</div>
+</section>
+<section class="roster">
+<a href="#wazco" data-go="wazco"><strong>Wazko</strong></a>
+<a href="#tenebris" data-go="tenebris"><strong>Tenebris</strong></a>
+</section>
+</main>
+
+<main data-view="wazco" hidden>
+<a class="back" href="#" data-go="inicio">← El Cerro</a>
+<section class="page">
+<div>
+<h1>Wazko</h1>
+<div class="links"><a href="https://www.instagram.com/wazzko_/" target="_blank" rel="noopener">Instagram</a><a href="#">Spotify</a><a href="#">YouTube</a></div>
+</div>
+<div class="photo" role="img" aria-label="Foto de Wazko">Foto de Wazko</div>
+<div class="rel">
+<span class="soon">Próximamente</span>
+<div class="cover">Sin<br>Receta</div>
+<h2>Sin Receta</h2><span class="m">Sencillo</span>
+<div class="links"><a href="#">Avisarme</a></div>
+</div>
+</section>
+</main>
+
+<main data-view="tenebris" hidden>
+<a class="back" href="#" data-go="inicio">← El Cerro</a>
+<section class="page">
+<div>
+<h1>Tenebris</h1>
+<div class="links"><a href="#">Instagram</a><a href="#">Spotify</a><a href="#">YouTube</a></div>
+</div>
+<div class="photo" role="img" aria-label="Foto de Tenebris">Foto de Tenebris</div>
+<div class="rel">
+<span class="soon">Próximamente</span>
+<div class="cover alt">Muy<br>pronto</div>
+<h2>Nuevo material</h2>
+</div>
+</section>
+</main>
+
+
+
+<main data-view="contacto" hidden>
+<div>
+<a class="back" href="#" data-go="inicio">← El Cerro</a>
+<section class="page" style="display:block;padding-bottom:0"><h1>Contacto</h1></section>
+</div>
+<section class="roster c">
+<a href="https://www.instagram.com/elcerromusic_" target="_blank" rel="noopener"><strong>Instagram</strong><small>@elcerromusic_</small></a>
+<div class="row"><strong>Correo</strong><small>elcerromusicgroup@gmail.com</small></div>
+</section>
+</main>
+
+<footer><span>© El Cerro</span><span class="mail">elcerromusicgroup@gmail.com</span><span>Cali, CO</span></footer>
+
+<script>
+var views=document.querySelectorAll('[data-view]');
+function show(v,noScroll){
+  if(v!=='wazco'&&v!=='tenebris'&&v!=='contacto')v='inicio';
+  document.body.setAttribute('data-v',v);
+  for(var i=0;i<views.length;i++)views[i].hidden=views[i].getAttribute('data-view')!==v;
+  if(!noScroll)window.scrollTo(0,0);
+}
+function fromHash(){return (location.hash||'').replace('#','')}
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[data-go]');if(!a)return;
+  e.preventDefault();var v=a.getAttribute('data-go');
+  try{location.hash=v==='inicio'?'':v}catch(x){}
+  show(v);
+});
+window.addEventListener('hashchange',function(){show(fromHash())});
+show(fromHash(),true);
+</script>
+</body>
+</html>
